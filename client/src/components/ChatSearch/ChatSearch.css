@@ -1,0 +1,96 @@
+.top {
+	margin-top: 130px;
+}
+.existing-chats {
+	.row {
+		margin-top: 20px;
+		flex-direction: column;
+		gap: 0;
+		overflow: auto;
+		height: auto;
+	}
+
+	.row::-webkit-scrollbar {
+		width: 0;
+	}
+
+	.group {
+		display: flex;
+		align-items: center;
+		padding-top: 2px;
+		transition:
+			background-color 0.3s ease,
+			transform 0.3s ease; /* Анимация для фона и размеров */
+		width: 100%;
+	}
+
+	.content:hover {
+		background-color: rgba(61, 61, 61, 0.1); /* Темный фон при наведении */
+		transform: scale(1.02); /* Увеличение размера при наведении */
+		padding-top: 0px;
+		padding-bottom: 15px;
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	.text_info {
+		display: flex;
+		flex-direction: column;
+		margin-left: 34px;
+		flex-grow: 2;
+	}
+
+	.text_info h3 {
+		font-weight: 600;
+		font-size: 20px;
+		letter-spacing: 0.05em;
+		color: #303030;
+	}
+
+	.text_info p {
+		font-weight: 300;
+		font-size: 16px;
+		letter-spacing: 0.05em;
+		color: #303030;
+		margin-top: -10px;
+	}
+
+	.time {
+		font-weight: 300;
+		font-size: 16px;
+		letter-spacing: 0.01em;
+		color: #7c7c7c;
+	}
+
+	.info_time {
+		position: relative;
+		margin-left: 15px;
+	}
+
+	.count_message {
+		width: 26px;
+		height: 26px;
+		color: white;
+		background-color: #f24e1e;
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		border-radius: 100%;
+		font-size: 15px;
+		position: absolute;
+		right: 0;
+		margin-top: 10px;
+	}
+}
+
+.err_search {
+	display: flex;
+	justify-content: center;
+	color: #7c7c7c;
+	margin-top: 50px;
+	font-size: 35px;
+}
+.icon_group img {
+	width: 50px;
+	height: 50px;
+}

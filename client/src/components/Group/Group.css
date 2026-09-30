@@ -1,0 +1,25 @@
+.icon_group {
+	position: relative;
+}
+.icon_group img {
+	position: relative;
+}
+
+.green {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	right: 0;
+	bottom: 0px;
+	background-color: chartreuse;
+}
+.gray {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	right: 0;
+	bottom: 0px;
+	background-color: gray;
+}
